@@ -110,6 +110,7 @@ try:
     default_year_range = (min_year, max_year)
 
     year_range = st.sidebar.slider(
+        '연도 범위 선택',        
         min_value=min_year,
         max_value=max_year,
         value=default_year_range
@@ -134,6 +135,7 @@ try:
     # 산점도 점 크기 조절
     # '''코드를 작성하시오'''
     point_size = st.sidebar.slider(
+        '산점도 점 크기',
         min_value=5,
         max_value=50,
         value=26
@@ -142,6 +144,7 @@ try:
     # 산점도 투명도 조절
     # '''코드를 작성하시오'''
     point_alpha = st.sidebar.slider(
+        '산점도 투명도',
         min_value=0.1,
         max_value=1.0,
         value=0.5,
